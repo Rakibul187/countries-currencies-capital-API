@@ -43,7 +43,7 @@ const displayCountryDetail = country => {
     <h5><span>Official:</span> ${country.name.official}</h5>
     <p><span>Continent:</span> ${country.continents[0]}, <span>Currencies:</span> ${Object.keys(country.currencies)[0]}</p>
     <p><span>Land Area:</span> ${country.area}, <span>Population:</span> ${country.population}</p>
-    <p><span>Borders:</span> ${country.borders}</p>
+    <p><span>Borders:</span> ${country.borders ? country.borders : "don't have border line"}</p>
     <img id="flags" src="${country.flags.png}">
     `
 }
