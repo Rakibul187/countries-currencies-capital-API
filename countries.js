@@ -36,7 +36,7 @@ const loadCountryDetail = code => {
 }
 
 const displayCountryDetail = country => {
-    console.log(country)
+    // console.log(country)
     const countryDetail = document.getElementById('country-detail')
     countryDetail.innerHTML = `
     <h3>Name: ${country.name.common}</h3>
