@@ -36,7 +36,7 @@ const loadCountryDetail = code => {
 }
 
 const displayCountryDetail = country => {
-    // console.log(country)
+    console.log(country)
     const countryDetail = document.getElementById('country-detail')
     countryDetail.innerHTML = `
     <h3>Name: ${country.name.common}</h3>
@@ -44,6 +44,7 @@ const displayCountryDetail = country => {
     <p><span>Continent:</span> ${country.continents[0]}, <span>Currencies:</span> ${Object.keys(country.currencies)[0]}</p>
     <p><span>Land Area:</span> ${country.area}, <span>Population:</span> ${country.population}</p>
     <p><span>Borders:</span> ${country.borders ? country.borders : "don't have border line"}</p>
+    <p><span>Currency Symbol:</span> ${country.currencies[Object.keys(country.currencies)[0]].symbol} </p>
     <img id="flags" src="${country.flags.png}">
     `
 }

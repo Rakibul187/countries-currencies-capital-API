@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    height: 65vh;
+    height: 70vh;
     padding: 15px;
 }
 
